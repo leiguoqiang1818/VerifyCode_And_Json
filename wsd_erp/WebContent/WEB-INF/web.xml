@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>wsd_erp</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>QueryDate</servlet-name>
+    <servlet-class>com.wsd.servlet.QueryDate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QueryDate</servlet-name>
+    <url-pattern>/QueryDate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>QueryDatejson</servlet-name>
+    <servlet-class>com.wsd.servlet.QueryDateJson</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QueryDatejson</servlet-name>
+    <url-pattern>/QueryDatejson</url-pattern>
+  </servlet-mapping>
+  <servlet>
+      <servlet-name>VerifyCodeServlet</servlet-name>
+      <servlet-class>com.wsd.image.VerifyCodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>VerifyCodeServlet</servlet-name>
+      <url-pattern>/VerifyCodeservlet</url-pattern>
+  </servlet-mapping>
+</web-app>
